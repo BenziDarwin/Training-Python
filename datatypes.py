@@ -14,17 +14,23 @@ boolean_value: bool = False
 # List of values
 arrays = [1, 2.0, "Hi", True, False]
 
+# no of elements = nth
+
+arrays[0] = 2
+
 # Tuple of values
 tuples = (1, 2.0, "Hi", True, False)
+
+tuples = (1, 3, "Hi", True, False)
 
 tuples = (1, 2.0, "Hi", True, True)
 
 # {Key: Value}
-dictionary = {"iphone1" : "Benjamin", "Samung": "Adrian"}
+dictionary = {"Ssali": "Benjamin", "Samung": "Adrian"}
 
-print(dictionary["iphone1"])
+print(dictionary["Samung"])
 
-print(array[0])
+print(arrays[0])
 
 students = [
     {"name": "Benjamin", "age": 20},
@@ -37,23 +43,28 @@ for student in students:
    # print(f"My name is {student['name']} and I am {student['age']} years old")
 
 # Queue example i.e. First in first out
+# Stack
+# Linked list
 #0,1,2,3....
 array = [{"weight":1, "name": "Benjamin", "age": 20}, {"weight":1, "name": "Adrian", "age": 20}, {"weight":2, "name": "Arnold", "age": 20}]
 
 array2 = [{"weight":"second", "name": "Benjamin", "age": 20}, {"weight":"first", "name": "Adrian", "age": 20}, {"weight":"second", "name": "Arnold", "age": 20}]
+
 print("Before...")
-print(array2)
-# Adding to Queue
+print(array)
 
+# Processing
+array.pop(0)
 
-for va in array2:
-    if va["weight"] == "first":
-        array2.remove(va)
-    else:
-        pass
+print("After")
+print(array)
 
-print("After...")
-print(array2)
+## Adding to our queue 
+array.append({"weight":1, "name": "Arnold", "age": 20})
+
+print("After adding to queue")
+print(array)
+
 
 
 
