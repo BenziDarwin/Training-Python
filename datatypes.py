@@ -1,6 +1,18 @@
 # These are strings
-string = "Hello world!sdvs 23e2dewdc"
-string1 = 'Hsdvds'
+string = "Hello world, "
+string1 = 'Divan'
+
+# String concatenation
+string2 = string + string1
+
+# Using format string
+string3 = f"{string}{string1}"
+string4 = "{}{}".format(string,string1)
+
+
+
+print(string4)
+
 
 # Integer
 integer = 1
@@ -20,6 +32,14 @@ arrays[0] = 2
 
 # Tuple of values
 tuples = (1, 2.0, "Hi", True, False)
+
+# What the memory address stores (Possible)
+tuples = (2, 3.0, 'Hi, Adrian', 3.2, {"key":"value"})
+
+name = input({"Something": 1})
+
+# The value within data structure (Impossible in a tuple)
+tuples[0] = 2
 
 tuples = (1, 3, "Hi", True, False)
 
