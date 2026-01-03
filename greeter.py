@@ -1,12 +1,5 @@
-from datetime import datetime
+from functions import greeter
 
-name = input("What is your name? ")
+name = input("What is your name again? \n")
 
-if datetime.now().hour < 12:
-    print(f"Good morning, {name}")
-elif datetime.now().hour < 17:
-    print(f"Good afternoon, {name}")
-elif datetime.now().hour < 22:
-    print(f"Good evening, {name}")
-else:
-    print(f"Good night, {name}")
+greeter(name)
